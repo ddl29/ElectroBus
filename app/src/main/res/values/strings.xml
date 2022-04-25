@@ -1,3 +1,12 @@
 <resources>
+    <!-- General Strings -->
+    <string name="app_logo_desc">ElectroBus</string>
     <string name="app_name">ElectroBus</string>
+    <!-- Scene-Specific Strings -->
+    <!-- • Login Scene -->
+    <string name="btnLogin1_eng">START</string>
+    <string name="btnLogin1_esp">INICIAR</string>
+    <string name="etxLoginHint1">TOTP</string>
+    <string name="etxLoginHint1_desc_eng">Insert TOTP key here.</string>
+    <string name="etxLoginHint1_desc_esp">Introduzca la clave TOTP aquí.</string>
 </resources>
