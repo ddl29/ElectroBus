@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "272824281080",
+    "project_id": "electrobus-d27ef",
+    "storage_bucket": "electrobus-d27ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272824281080:android:73c1f78d40b84b5162580d",
+        "android_client_info": {
+          "package_name": "com.example.electrobus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272824281080-ctev4fur963dv1mvfeljpc8c7nngop08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAdSq0vseD8uYjr2lS4AVlwXvRv1A5HMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272824281080-ctev4fur963dv1mvfeljpc8c7nngop08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
