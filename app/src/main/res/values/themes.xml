@@ -14,4 +14,8 @@
         <!-- Background. -->
         <item name="android:windowBackground">@color/blue</item>
     </style>
+
+    <style name="SplashTheme" parent="Theme.ElectroBus">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
 </resources>
