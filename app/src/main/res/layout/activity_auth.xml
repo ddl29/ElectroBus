@@ -20,7 +20,7 @@
             android:id="@+id/img_ElectroBusLogo"
             android:layout_width="300dp"
             android:layout_height="90dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="0dp"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="80dp"
             android:contentDescription="@string/app_logo_desc"
@@ -32,7 +32,10 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="#DCD2D2"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -44,7 +47,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -52,33 +57,44 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="101dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/login_button"
-                android:layout_width="173dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:backgroundTint="@color/white"
                 android:text="@string/btnLogin1_esp"
                 android:textColor="@color/blue"
                 android:textSize="20sp" />
 
-            <Space
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+        </LinearLayout>
 
-            <Button
-                android:id="@+id/signup_button"
-                android:layout_width="177dp"
-                android:layout_height="60dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/forgotPassword_textView"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:text="Registrar"
-                android:textColor="@color/blue"
-                android:textSize="20sp"
-                tools:text="Registrar" />
+                android:text="Forgot Password?"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/signupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
