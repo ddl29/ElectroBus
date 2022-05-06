@@ -31,18 +31,32 @@ class AuthActivity : AppCompatActivity() {
         }
 
         binding.loginButton.setOnClickListener {
-            val email = binding.emailEditText.text
-            val password = binding.passwordEditText.text
-            if(email.isNotEmpty() && password.isNotEmpty()){
+            val email = binding.emailEditText
+            val password = binding.passwordEditText
+
+            var noErrors = true
+
+            if(email.text.isEmpty()){
+                email.setError("Ingresa tu email.")
+                noErrors = false
+            }
+            if(password.text.isEmpty()){
+                password.setError("Ingresa tu contraseña.")
+                noErrors = false
+            }
+
+            if(noErrors){
                 FirebaseAuth.getInstance().
-                signInWithEmailAndPassword(email.toString(),
-                    password.toString()).addOnCompleteListener{
+                signInWithEmailAndPassword(email.text.toString(),
+                    password.text.toString()).addOnCompleteListener{
                     if(it.isSuccessful){
                         showHome(it.result?.user?.email?: "", ProviderType.BASIC)
                     }else{
                         showAlert()
                     }
                 }
+            }else{
+                return@setOnClickListener
             }
         }
     }

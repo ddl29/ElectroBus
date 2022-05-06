@@ -39,36 +39,32 @@
             android:textSize="20sp" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id="@+id/userTypeRadioGroup"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="69dp"
-                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/pasajeroButton"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Pasajero"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-                <RadioButton
-                    android:id="@+id/pasajeroButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_weight="1"
-                    android:text="Pasajero"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <RadioButton
-                    android:id="@+id/conductorButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Conductor"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
+            <RadioButton
+                android:id="@+id/conductorButton"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Conductor"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </RadioGroup>
 
@@ -91,9 +87,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:ems="10"
+            android:hint="Nombre"
             android:inputType="textPersonName"
-            android:text="Nombre"
             android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
             android:textSize="20sp" />
 
         <Space
@@ -106,9 +103,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:ems="10"
+            android:hint="Matrícula o nómina"
             android:inputType="textPersonName"
-            android:text="Matrícula o nómina"
             android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
             android:textSize="20sp" />
 
         <Space
