@@ -16,3 +16,8 @@ There will be two types of users:
     -Driver
     
 The driver will share its current location (posting his coordinates on Firebase) and each Passenger will retrieve them and see the current bus location on a map.
+
+
+APP Prototype Design:
+
+![electrobus_login_and_map](https://user-images.githubusercontent.com/78662124/168694704-e1e02699-aa0f-4c88-a151-12e9edc8097b.png)
