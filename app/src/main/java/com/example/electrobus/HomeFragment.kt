@@ -1,37 +1,33 @@
 package com.example.electrobus
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.electrobus.databinding.FragmentHomeBinding
-import com.google.firebase.auth.FirebaseAuth
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 
-enum class ProviderType{
-    BASIC
-}
 
-class HomeActivity : AppCompatActivity() {
-    lateinit var binding: FragmentHomeBinding
+
+/**
+ * A simple [Fragment] subclass.
+ * Use the [HomeFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class HomeFragment : Fragment() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = FragmentHomeBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        //SetUp
-        val bundle = intent.extras
-        val email = bundle?.getString("email")
-        val provider = bundle?.getString("provider")
-        setup(email?:"", provider?:"")
     }
 
-    private fun setup(email: String, provider: String){
-        title = "Inicio"
-        //binding.emailTextView.text = email
-        //binding.providerTextView.text = provider
-
-        /*binding.logOutButton.setOnClickListener {
-            FirebaseAuth.getInstance().signOut()
-            onBackPressed()
-        }*/
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
+
+
 }
