@@ -2,7 +2,7 @@ package com.example.electrobus
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.electrobus.databinding.ActivityHomeBinding
+import com.example.electrobus.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 
 enum class ProviderType{
@@ -10,11 +10,11 @@ enum class ProviderType{
 }
 
 class HomeActivity : AppCompatActivity() {
-    lateinit var binding: ActivityHomeBinding
+    lateinit var binding: FragmentHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityHomeBinding.inflate(layoutInflater)
+        binding = FragmentHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //SetUp
@@ -26,12 +26,12 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setup(email: String, provider: String){
         title = "Inicio"
-        binding.emailTextView.text = email
-        binding.providerTextView.text = provider
+        //binding.emailTextView.text = email
+        //binding.providerTextView.text = provider
 
-        binding.logOutButton.setOnClickListener {
+        /*binding.logOutButton.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
-        }
+        }*/
     }
 }

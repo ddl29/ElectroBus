@@ -9,4 +9,6 @@
     <string name="etxLoginHint1">TOTP</string>
     <string name="etxLoginHint1_desc_eng">Insert TOTP key here.</string>
     <string name="etxLoginHint1_desc_esp">Introduzca la clave TOTP aquí.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

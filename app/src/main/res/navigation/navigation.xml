@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/rutasFragment"
+        android:name="com.example.electrobus.RutasFragment"
+        android:label="fragment_rutas"
+        tools:layout="@layout/fragment_rutas" />
+    <fragment
+        android:id="@+id/alarmasFragment"
+        android:name="com.example.electrobus.AlarmasFragment"
+        android:label="fragment_alarmas"
+        tools:layout="@layout/fragment_alarmas" />
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.example.electrobus.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.electrobus.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <activity
+        android:id="@+id/homeFragment"
+        android:name="com.example.electrobus.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>
