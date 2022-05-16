@@ -1,5 +1,6 @@
-# ElectroBus
-Electro Bus Location Tracker App
+![electrobus_logo_long](https://user-images.githubusercontent.com/78662124/168695090-22c25b43-1adc-436c-9346-df2ee09a80e6.png)
+
+ElectroBus Location Tracker App
 
 This will be a Bus Location Tracker for use at Tec de Monterrey - Campus Monterrey by students and professor.
 
@@ -20,4 +21,11 @@ The driver will share its current location (posting his coordinates on Firebase)
 
 APP Prototype Design:
 
-![electrobus_login_and_map](https://user-images.githubusercontent.com/78662124/168694704-e1e02699-aa0f-4c88-a151-12e9edc8097b.png)
+Login and Register:
+![electrobus_login_and_register](https://user-images.githubusercontent.com/78662124/168695471-f600625c-cff4-42e2-82e2-f8e9d09feeab.png)
+
+Passenger View and Driver View:
+![electrobus_passenger_driver](https://user-images.githubusercontent.com/78662124/168695556-ee81b37d-f3d8-43e6-986e-4f9ea0f21521.png)
+
+Available routes and usage statistics:
+![electrobus_routes_stats](https://user-images.githubusercontent.com/78662124/168695601-c2827fb4-54d0-426a-bae1-1672ad06bb7c.png)
