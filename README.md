@@ -1,7 +1,8 @@
 ![electrobus_logo_long](https://user-images.githubusercontent.com/78662124/168695090-22c25b43-1adc-436c-9346-df2ee09a80e6.png)
 
-ElectroBus Location Tracker App
+# Context
 
+ElectroBus Location Tracker App
 This will be a Bus Location Tracker for use at Tec de Monterrey - Campus Monterrey by students and professor.
 
 There is currently a gasoline based bus who services the academic community and takes them to the Campus.
@@ -9,8 +10,8 @@ It has several stops distributed along the city.
 
 As part of the renovation of bus as an electric bus, there is interest to digitalize its operation, by counting how many users get up and down.
 
-### *******************   That is how the Electrobus Location Tracker App project was borned   *******************
 
+# Description:
 There will be two types of users:
   
     -Passenger
@@ -18,8 +19,11 @@ There will be two types of users:
     
 The driver will share its current location (posting his coordinates on Firebase) and each Passenger will retrieve them and see the current bus location on a map.
 
+![electrobus_communication_model](https://user-images.githubusercontent.com/78662124/168696864-9a9e0599-34fb-4ee5-8464-3c191349327c.png)
 
-APP Prototype Design:
+
+
+# APP Prototype Design:
 
 ### Login and Register:
 ![electrobus_login_and_register](https://user-images.githubusercontent.com/78662124/168695471-f600625c-cff4-42e2-82e2-f8e9d09feeab.png)
