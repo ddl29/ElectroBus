@@ -6,9 +6,40 @@
     <!-- • Login Scene -->
     <string name="btnLogin1_eng">START</string>
     <string name="btnLogin1_esp">INICIAR</string>
+    <string name="btnSignUp_eng">Sign Up</string>
+    <string name="btnSignUp_esp">Registrarse</string>
     <string name="etxLoginHint1">TOTP</string>
     <string name="etxLoginHint1_desc_eng">Insert TOTP key here.</string>
     <string name="etxLoginHint1_desc_esp">Introduzca la clave TOTP aquí.</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="txvLogin1_eng">Forgot Password?</string>
+    <string name="txvLogin1_esp">¿Olvidó su contraseña?</string>
+    <!-- • Sign Up Scene -->
+    <string name="btnConductor_eng">Driver</string>
+    <string name="btnConductor_esp">Conductor</string>
+    <string name="btnPasajero_eng">Passenger</string>
+    <string name="btnPasajero_esp">Pasajero</string>
+    <string name="btnSendSignUp_eng">SIGN UP</string>
+    <string name="btnSendSignUp_esp">REGISTRARSE</string>
+    <string name="etxEmailHint">Email</string>
+    <string name="etxMatriculaHint_eng">Institution ID</string>
+    <string name="etxMatriculaHint_esp">Matrícula o Nómina</string>
+    <string name="etxNombreHint_eng">Name</string>
+    <string name="etxNombreHint_esp">Nombre</string>
+    <string name="etxPasswordHint_eng">Password</string>
+    <string name="etxPasswordHint_esp">Contraseña</string>
+    <string name="txvSignUp1_eng">I\'m:</string>
+    <string name="txvSignUp1_esp">Soy:</string>
+    <!-- • Home Fragment Scene -->
+    <!-- • Routes Fragment Scene -->
+    <!-- • Stats Fragment Scene -->
+    <!-- • Alarms Fragment Scene -->
+    <!-- • Settings Fragment Scene -->
+    <!-- Temporaries
+           - Borrar cuando queden hechos  -MX -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temporaryAlarms">Alarms Fragment View</string>
+    <string name="temporaryHome">Home Fragment View</string>
+    <string name="temporaryRoutes">Routes Fragment View</string>
+    <string name="temporarySettings">Settings Fragment View</string>
+    <string name="temporaryStats">Stats Fragment View</string>
 </resources>

@@ -39,13 +39,13 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun registerUser() {
-        val name = binding.nombrePlainText
-        val matricula = binding.matriculaPlainText
-        val email = binding.emailPlainText
-        val password = binding.passwordPlainText
-        val user_type = when(binding.userTypeRadioGroup.checkedRadioButtonId){
-            R.id.pasajeroButton -> "pasajero"
-            else -> "conductor"
+        val name = binding.etxNombre
+        val matricula = binding.etxMatricula
+        val email = binding.etxEmail
+        val password = binding.etxPassword
+        val user_type = when(binding.rgpUserType.checkedRadioButtonId){
+            R.id.btnPasajero -> "Pasajero"
+            else -> "Conductor"
         }
 
         binding.registerSendButton.setOnClickListener {
@@ -89,16 +89,16 @@ class RegisterActivity : AppCompatActivity() {
                             if(it.isSuccessful){
                                 Toast.makeText(this, "Usuario registrado con éxito.", Toast.LENGTH_SHORT).show()
                                 startActivity(Intent(this, AuthActivity::class.java))
-                            }else{
-                                Toast.makeText(this, "Ha ocurrido unnnn error. Intente de nuevo.", Toast.LENGTH_SHORT).show()
+                            } else {
+                                Toast.makeText(this, "Ha ocurrido un error. Intente de nuevo.", Toast.LENGTH_SHORT).show()
                             }
                         }
 
-                    }else{
+                    } else {
                         Toast.makeText(this, "Ha ocurrido dos error. Intente de nuevo.", Toast.LENGTH_SHORT).show()
                     }
                 }
-            }else{
+            } else {
                 return@setOnClickListener
             }
 

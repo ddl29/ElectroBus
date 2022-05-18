@@ -26,13 +26,13 @@ class AuthActivity : AppCompatActivity() {
     private fun setup(){
         title = "Authentication"
 
-        binding.signupButton.setOnClickListener {
+        binding.btnSignUp.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
-        binding.loginButton.setOnClickListener {
-            val email = binding.emailEditText
-            val password = binding.passwordEditText
+        binding.btnLogin.setOnClickListener {
+            val email = binding.etxEmail
+            val password = binding.etxPassword
 
             var noErrors = true
 

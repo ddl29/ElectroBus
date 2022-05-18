@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,80 +19,78 @@
 
         <ImageView
             android:id="@+id/img_ElectroBusLogo"
-            android:layout_width="300dp"
+            android:layout_width="220dp"
             android:layout_height="90dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
             android:layout_marginBottom="80dp"
             android:contentDescription="@string/app_logo_desc"
             app:srcCompat="@drawable/electrobus_logo_long" />
 
         <EditText
-            android:id="@+id/emailEditText"
+            android:id="@+id/etxEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Email"
+            android:hint="@string/etxEmailHint"
             android:inputType="textEmailAddress"
-            android:textColor="#DCD2D2"
-            android:textColorHint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="20sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
 
         <EditText
-            android:id="@+id/passwordEditText"
+            android:id="@+id/etxPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/etxPasswordHint_esp"
             android:inputType="textPassword"
-            android:textColorHint="#FFFFFF"
+            android:textColorHint="@color/white"
             android:textSize="20sp" />
 
-        <Space
+        <!-- Cambié este por un Relative, porque nomás era
+         un objeto  -MX -->
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="25dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="101dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/login_button"
-                android:layout_width="match_parent"
+                android:id="@+id/btnLogin"
+                android:layout_width="220dp"
                 android:layout_height="60dp"
                 android:backgroundTint="@color/white"
+                android:layout_centerInParent="true"
                 android:text="@string/btnLogin1_esp"
                 android:textColor="@color/blue"
                 android:textSize="20sp" />
-
-        </LinearLayout>
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/forgotPassword_textView"
-                android:layout_width="49dp"
+                android:id="@+id/txvLogin1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Forgot Password?"
+                android:text="@string/txvLogin1_esp"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/signupButton"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Register"
+                android:text="@string/btnSignUp_esp"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
