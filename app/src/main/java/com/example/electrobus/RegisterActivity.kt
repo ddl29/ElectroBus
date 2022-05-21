@@ -43,13 +43,12 @@ class RegisterActivity : AppCompatActivity() {
         val matricula = binding.etxMatricula
         val email = binding.etxEmail
         val password = binding.etxPassword
-        val user_type = when(binding.rgpUserType.checkedRadioButtonId){
-            R.id.btnPasajero -> "Pasajero"
-            else -> "Conductor"
-        }
+        var typeUser = ""
 
         binding.registerSendButton.setOnClickListener {
             var noErrors = true
+
+            typeUser = getUserType()
 
             if(name.text.isEmpty()){
                 name.setError("Ingresa tu nombre.")
@@ -75,6 +74,11 @@ class RegisterActivity : AppCompatActivity() {
                 noErrors = false
             }
 
+            if(typeUser == "undefined"){
+                Toast.makeText(this, "Selecciona un tipo de usuario.", Toast.LENGTH_SHORT).show()
+                noErrors = false
+            }
+
             if(noErrors){
                 FirebaseAuth.getInstance().
                 createUserWithEmailAndPassword(email.text.toString(), password.text.toString()).
@@ -82,7 +86,7 @@ class RegisterActivity : AppCompatActivity() {
                     if(it.isSuccessful){
                         var user = User(name.text.toString(), matricula.text.toString(),
                             email.text.toString(), password.text.toString(),
-                            user_type)
+                            typeUser)
                         FirebaseAuth.getInstance().currentUser?.let { it1 ->
                             FirebaseDatabase.getInstance().getReference("Users").child(it1.uid)
                         }?.setValue(user)?.addOnCompleteListener { it ->
@@ -102,6 +106,14 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+        }
+    }
+
+    private fun getUserType(): String {
+        return when(binding.rgpUserType.checkedRadioButtonId){
+            R.id.btnPasajero -> "Pasajero"
+            R.id.btnConductor -> "Conductor"
+            else -> "undefined"
         }
     }
 }

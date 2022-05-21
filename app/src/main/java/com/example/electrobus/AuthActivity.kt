@@ -3,13 +3,20 @@ package com.example.electrobus
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import android.window.SplashScreen
 import androidx.appcompat.app.AlertDialog
 import com.example.electrobus.databinding.ActivityAuthBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class AuthActivity : AppCompatActivity() {
     lateinit var binding: ActivityAuthBinding
+    lateinit var userType: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         Thread.sleep(500)
         setTheme(R.style.Theme_ElectroBus)
@@ -50,7 +57,12 @@ class AuthActivity : AppCompatActivity() {
                 signInWithEmailAndPassword(email.text.toString(),
                     password.text.toString()).addOnCompleteListener{
                     if(it.isSuccessful){
-                        showHome(it.result?.user?.email?: "", ProviderType.BASIC)
+                        val uid = it.result?.user?.uid.toString()
+                        //showHome(typeUser)
+                        getTypeUser(uid)
+                        Toast.makeText(this, userType, Toast.LENGTH_SHORT).show()
+
+
                     }else{
                         showAlert()
                     }
@@ -59,6 +71,19 @@ class AuthActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
         }
+    }
+
+    private fun getTypeUser(uid: String){
+        
+        FirebaseDatabase.getInstance().getReference("Users").child(uid).child("typeUser").addValueEventListener(object :ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                snapshot.value.toString()
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        })
     }
 
     private fun showAlert(){
@@ -70,7 +95,7 @@ class AuthActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun showHome(email: String, provider: ProviderType){
+    private fun showHome(email: String){
         val homeIntent = Intent(this, HomeActivity::class.java)
         startActivity(homeIntent)
     }
