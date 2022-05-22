@@ -13,6 +13,11 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
+enum class UserType{
+    Conductor,
+    Pasajero
+}
+
 class AuthActivity : AppCompatActivity() {
     lateinit var binding: ActivityAuthBinding
 
@@ -58,9 +63,7 @@ class AuthActivity : AppCompatActivity() {
                     if(it.isSuccessful){
                         val uid = it.result?.user?.uid.toString()
                         //showHome(typeUser)
-                        //Toast.makeText(this, getTypeUser(uid), Toast.LENGTH_SHORT).show()
-                        getTypeUser(uid)
-
+                        getUserTypeAndShowHome(uid)
 
                     }else{
                         showAlert()
@@ -72,10 +75,11 @@ class AuthActivity : AppCompatActivity() {
         }
     }
 
-    private fun getTypeUser(uid: String){
+    private fun getUserTypeAndShowHome(uid: String){
         FirebaseDatabase.getInstance().getReference("Users").child(uid).child("typeUser").addValueEventListener(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 showHome(snapshot.value.toString())
+                //Toast.makeText(applicationContext, snapshot.value.toString(), Toast.LENGTH_SHORT).show()
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -94,9 +98,12 @@ class AuthActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun showHome(email: String){
+    private fun showHome(userType: String){
         val homeIntent = Intent(this, HomeActivity::class.java)
-        startActivity(homeIntent)
+        if(userType == "Conductor")
+            Toast.makeText(applicationContext, "Mostrar Conductor Home", Toast.LENGTH_SHORT).show()
+        else
+            startActivity(homeIntent)
     }
 }
 

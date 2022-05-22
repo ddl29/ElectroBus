@@ -13,10 +13,6 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.auth.FirebaseAuth
 
-enum class ProviderType{
-    BASIC
-}
-
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
 
