@@ -99,11 +99,10 @@ class AuthActivity : AppCompatActivity() {
     }
 
     private fun showHome(userType: String){
-        val homeIntent = Intent(this, HomeActivity::class.java)
         if(userType == "Conductor")
-            Toast.makeText(applicationContext, "Mostrar Conductor Home", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, HomeDriverActivity::class.java))
         else
-            startActivity(homeIntent)
+            startActivity(Intent(this, HomeActivity::class.java))
     }
 }
 

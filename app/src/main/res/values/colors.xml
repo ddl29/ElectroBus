@@ -15,4 +15,5 @@
     <!-- Status Colors -->
     <color name="carmine">#FFB6174B</color>
     <color name="may_green">#FF3F8D44</color>
+    <color name="graylight">#cfd8dc</color>
 </resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_driver"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeDriverFragment">
+
+
+    <fragment
+        android:id="@+id/homeDriverFragment"
+        android:name="com.example.electrobus.HomeDriverFragment"
+        android:label="fragment_home_driver"
+        tools:layout="@layout/fragment_home_driver" />
+    <fragment
+        android:id="@+id/settingsDriverFragment"
+        android:name="com.example.electrobus.SettingsDriverFragment"
+        android:label="fragment_settings_driver"
+        tools:layout="@layout/fragment_settings_driver" />
+</navigation>

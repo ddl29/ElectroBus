@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/homeDriverFragment"
         android:icon="@drawable/electrobus_logo_small"
         android:title="Bus" />
     <item
@@ -18,7 +18,7 @@
         android:icon="@drawable/ic_baseline_co2_24"
         android:title="Stats" />
     <item
-        android:id="@+id/settingsFragment"
+        android:id="@+id/settingsDriverFragment"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="Conf" />
 </menu>
