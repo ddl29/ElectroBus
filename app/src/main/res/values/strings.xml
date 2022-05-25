@@ -34,12 +34,47 @@
     <!-- • Stats Fragment Scene -->
     <!-- • Alarms Fragment Scene -->
     <!-- • Settings Fragment Scene -->
+    <string name="txvSettings1_eng">General Settings</string>
+    <string name="txvSettings1_esp">Configuración General</string>
+    <string name="txvSettings2_eng">Alarms</string>
+    <string name="txvSettings2_esp">Alarmas</string>
+    <string name="txvSettings1_1_eng">Modo Oscuro</string>
+    <string name="txvSettings1_1_esp">Dark Mode</string>
+    <string name="txvSettings1_2_eng">Language</string>
+    <string name="txvSettings1_2_esp">Idioma</string>
+    <string name="txvSettings1_3_eng">Main Route</string>
+    <string name="txvSettings1_3_esp">Ruta Principal</string>
+    <string name="txvSettings2_1_eng">Set alarm:</string>
+    <string name="txvSettings2_1_esp">Mandar la alarma:</string>
+    <string name="txvSettings2_2_eng">Toggle sound</string>
+    <string name="txvSettings2_2_esp">Alarma con sonido</string>
+    <string-array name="lvwAlarmTimesList_eng">
+        <item>10 min before</item>
+        <item>15 min before</item>
+        <item>20 min before</item>
+        <item>30 min before</item>
+    </string-array>
+    <string-array name="lvwAlarmTimesList_esp">
+        <item>10 min antes</item>
+        <item>15 min antes</item>
+        <item>20 min antes</item>
+        <item>30 min antes</item>
+    </string-array>
+    <string-array name="lvwLanguageList">
+        <item>English</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="lvwRoutesList">
+        <item>Garza Sada</item>
+        <item>Hospitales y Escuelas</item>
+        <item>Revolución</item>
+        <item>Valle Alto</item>
+    </string-array>
     <!-- Temporaries
            - Borrar cuando queden hechos  -MX -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="temporaryAlarms">Alarms Fragment View</string>
     <string name="temporaryHome">Home Fragment View</string>
     <string name="temporaryRoutes">Routes Fragment View</string>
-    <string name="temporarySettings">Settings Fragment View</string>
     <string name="temporaryStats">Stats Fragment View</string>
 </resources>
