@@ -1,13 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout_Alarmas"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".AlarmasFragment">
 
+    <!--
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/temporaryAlarms" />
+    -->
+
+    <TextView
+        android:id="@+id/textView_Alarmas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Establecer Alarmas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Alarmas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/CheckBox_Lunes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Lunes" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_Martes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Martes" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_Miercoles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Miércoles" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_Jueves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Jueves" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_Viernes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Viernes" />
+
+        <EditText
+            android:id="@+id/editTextTime_Alarmas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="8:00 AM"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/button_AlarmasBorrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Borrar" />
+
+        <Button
+            android:id="@+id/button_AlarmasGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Guardar" />
+
+
+    </LinearLayout>
+
 
 </FrameLayout>
