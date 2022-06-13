@@ -6,89 +6,110 @@
     android:layout_height="wrap_content"
     tools:context=".AlarmasFragment">
 
-    <!--
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/temporaryAlarms" />
-    -->
-
-    <TextView
-        android:id="@+id/textView_Alarmas"
+        android:id="@+id/txvAlarms1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Establecer Alarmas"
+        android:layout_marginTop="50dp"
+        android:text="@string/txvAlarms1"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="34sp" />
+        android:textSize="30sp" />
 
     <LinearLayout
-        android:id="@+id/LinearLayout_Alarmas"
+        android:id="@+id/LinearLayoutALM1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="40dp"
         android:orientation="vertical">
 
         <CheckBox
-            android:id="@+id/CheckBox_Lunes"
+            android:id="@+id/chbxMonday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Lunes" />
+            android:background="@color/dark_blue"
+            android:text="@string/chbxMonday"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <CheckBox
-            android:id="@+id/CheckBox_Martes"
+            android:id="@+id/chbxTuesday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Martes" />
+            android:background="@color/dark_blue"
+            android:text="@string/chbxTuesday"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <CheckBox
-            android:id="@+id/CheckBox_Miercoles"
+            android:id="@+id/chbxWednesday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Miércoles" />
+            android:background="@color/dark_blue"
+            android:text="@string/chbxWednesday"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <CheckBox
-            android:id="@+id/CheckBox_Jueves"
+            android:id="@+id/chbxThursday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Jueves" />
+            android:background="@color/dark_blue"
+            android:text="@string/chbxThursday"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <CheckBox
-            android:id="@+id/CheckBox_Viernes"
+            android:id="@+id/chbxFriday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:text="Viernes" />
+            android:background="@color/dark_blue"
+            android:text="@string/chbxFriday"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/editTextTime_Alarmas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:layout_marginTop="10dp"
-            android:ems="10"
-            android:hint="8:00 AM"
-            android:inputType="time" />
+        <!-- Pendiente de configurar en Activity  - MX -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="0.5" >
+
+            <AutoCompleteTextView
+                android:id="@+id/atvAlarms1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Timechart"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/button_AlarmasBorrar"
-            android:layout_width="match_parent"
+            android:id="@+id/btnAlarms1"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Borrar" />
+            android:layout_gravity="center"
+            android:backgroundTint="@color/may_green"
+            android:padding="15dp"
+            android:text="@string/btnAlarms1"
+            android:textColor="@color/rich_black"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button_AlarmasGuardar"
-            android:layout_width="match_parent"
+            android:id="@+id/btnAlarms2"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Guardar" />
+            android:backgroundTint="@color/rich_black"
+            android:padding="10dp"
+            android:text="@string/btnAlarms2"
+            android:textSize="18sp"/>
 
 
     </LinearLayout>

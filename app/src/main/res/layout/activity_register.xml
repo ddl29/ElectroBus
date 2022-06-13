@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="@string/txvSignUp1_esp"
+            android:text="@string/txvSignUp1"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp" />
@@ -52,7 +52,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_weight="1"
                 android:checked="true"
-                android:text="@string/btnPasajero_esp"
+                android:text="@string/btnPasajero"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -62,7 +62,7 @@
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/btnConductor_esp"
+                android:text="@string/btnConductor"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
-            android:hint="@string/etxNombreHint_esp"
+            android:hint="@string/etxNombreHint"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
@@ -100,7 +100,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:ems="10"
-            android:hint="@string/etxMatriculaHint_esp"
+            android:hint="@string/etxMatriculaHint"
             android:inputType="textPersonName"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -125,19 +125,19 @@
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:ems="10"
-            android:hint="@string/etxPasswordHint_esp"
+            android:hint="@string/etxPasswordHint"
             android:inputType="textPassword"
             android:textColorHint="#FFFFFF"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/registerSendButton"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="45dp"
             android:backgroundTint="@color/white"
-            android:text="@string/btnSendSignUp_esp"
+            android:text="@string/btnSendSignUp"
             android:textColor="@color/blue"
             android:textSize="20sp" />
 

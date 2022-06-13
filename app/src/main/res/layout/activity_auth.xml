@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="@string/etxPasswordHint_esp"
+            android:hint="@string/etxPasswordHint"
             android:inputType="textPassword"
             android:textColorHint="@color/white"
             android:textSize="20sp" />
@@ -64,7 +64,7 @@
                 android:layout_height="60dp"
                 android:backgroundTint="@color/white"
                 android:layout_centerInParent="true"
-                android:text="@string/btnLogin1_esp"
+                android:text="@string/btnLogin1"
                 android:textColor="@color/blue"
                 android:textSize="20sp" />
         </RelativeLayout>
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/txvLogin1_esp"
+                android:text="@string/txvLogin1"
                 android:textAlignment="textEnd"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/btnSignUp_esp"
+                android:text="@string/btnSignUp"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />

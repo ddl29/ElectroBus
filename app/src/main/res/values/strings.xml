@@ -1,60 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- General Strings -->
     <string name="app_logo_desc">ElectroBus</string>
     <string name="app_name">ElectroBus</string>
     <!-- Scene-Specific Strings -->
     <!-- • Login Scene -->
-    <string name="btnLogin1_eng">START</string>
-    <string name="btnLogin1_esp">INICIAR</string>
-    <string name="btnSignUp_eng">Sign Up</string>
-    <string name="btnSignUp_esp">Registrarse</string>
+    <string name="btnLogin1">INICIAR</string>
+    <string name="btnSignUp">Registrarse</string>
     <string name="etxLoginHint1">TOTP</string>
-    <string name="etxLoginHint1_desc_eng">Insert TOTP key here.</string>
-    <string name="etxLoginHint1_desc_esp">Introduzca la clave TOTP aquí.</string>
-    <string name="txvLogin1_eng">Forgot Password?</string>
-    <string name="txvLogin1_esp">¿Olvidó su contraseña?</string>
+    <string name="etxLoginHint1_desc">Introduzca la clave TOTP aquí.</string>
+    <string name="txvLogin1">¿Olvidó su contraseña?</string>
     <!-- • Sign Up Scene -->
-    <string name="btnConductor_eng">Driver</string>
-    <string name="btnConductor_esp">Conductor</string>
-    <string name="btnPasajero_eng">Passenger</string>
-    <string name="btnPasajero_esp">Pasajero</string>
-    <string name="btnSendSignUp_eng">SIGN UP</string>
-    <string name="btnSendSignUp_esp">REGISTRARSE</string>
+    <string name="btnConductor">Conductor</string>
+    <string name="btnPasajero">Pasajero</string>
+    <string name="btnSendSignUp">REGISTRARSE</string>
     <string name="etxEmailHint">Email</string>
-    <string name="etxMatriculaHint_eng">Institution ID</string>
-    <string name="etxMatriculaHint_esp">Matrícula o Nómina</string>
-    <string name="etxNombreHint_eng">Name</string>
-    <string name="etxNombreHint_esp">Nombre</string>
-    <string name="etxPasswordHint_eng">Password</string>
-    <string name="etxPasswordHint_esp">Contraseña</string>
-    <string name="txvSignUp1_eng">I\'m:</string>
-    <string name="txvSignUp1_esp">Soy:</string>
+    <string name="etxMatriculaHint">Matrícula o Nómina</string>
+    <string name="etxNombreHint">Nombre</string>
+    <string name="etxPasswordHint">Contraseña</string>
+    <string name="txvSignUp1">Soy:</string>
     <!-- • Home Fragment Scene -->
     <!-- • Routes Fragment Scene -->
+    <string name="btnRoutes1">GARZA SADA</string>
+    <string name="btnRoutes2">HOSPITALES Y ESCUELAS</string>
+    <string name="btnRoutes3">REVOLUCIÓN</string>
+    <string name="btnRoutes4">VALLE ALTO</string>
+    <string name="txvRoutes1">Rutas CircuitoTec</string>
     <!-- • Stats Fragment Scene -->
     <!-- • Alarms Fragment Scene -->
-    <!-- • Settings Fragment Scene -->
-    <string name="txvSettings1_eng">General Settings</string>
-    <string name="txvSettings1_esp">Configuración General</string>
-    <string name="txvSettings2_eng">Alarms</string>
-    <string name="txvSettings2_esp">Alarmas</string>
-    <string name="txvSettings1_1_eng">Modo Oscuro</string>
-    <string name="txvSettings1_1_esp">Dark Mode</string>
-    <string name="txvSettings1_2_eng">Language</string>
-    <string name="txvSettings1_2_esp">Idioma</string>
-    <string name="txvSettings1_3_eng">Main Route</string>
-    <string name="txvSettings1_3_esp">Ruta Principal</string>
-    <string name="txvSettings2_1_eng">Set alarm:</string>
-    <string name="txvSettings2_1_esp">Mandar la alarma:</string>
-    <string name="txvSettings2_2_eng">Toggle sound</string>
-    <string name="txvSettings2_2_esp">Alarma con sonido</string>
-    <string-array name="lvwAlarmTimesList_eng">
-        <item>10 min before</item>
-        <item>15 min before</item>
-        <item>20 min before</item>
-        <item>30 min before</item>
+    <string name="btnAlarms1">GUARDAR</string>
+    <string name="btnAlarms2">BORRAR</string>
+    <string name="chbxFriday">Viernes</string>
+    <string name="chbxMonday">Lunes</string>
+    <string name="chbxThursday">Jueves</string>
+    <string name="chbxTuesday">Martes</string>
+    <string name="chbxWednesday">Miércoles</string>
+    <string name="txvAlarms1">Establecer alarmas</string>
+    <string-array name="lvwAlarmTimechart">
+        <item>8:00 AM</item>
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>12:00 PM</item>
+        <item>1:00 PM</item>
+        <item>2:00 PM</item>
+        <item>3:00 PM</item>
+        <item>4:00 PM</item>
+        <item>5:00 PM</item>
+        <item>6:00 PM</item>
     </string-array>
-    <string-array name="lvwAlarmTimesList_esp">
+    <!-- • Settings Fragment Scene -->
+    <string name="txvSettings1">Configuración General</string>
+    <string name="txvSettings2">Alarmas</string>
+    <string name="txvSettings1_1">Modo Oscuro</string>
+    <string name="txvSettings1_2">Idioma</string>
+    <string name="txvSettings1_3">Ruta Principal</string>
+    <string name="txvSettings2_1">Mandar la alarma:</string>
+    <string name="txvSettings2_2">Alarma con sonido</string>
+    <string-array name="lvwAlarmTimesList">
         <item>10 min antes</item>
         <item>15 min antes</item>
         <item>20 min antes</item>
@@ -63,6 +66,7 @@
     <string-array name="lvwLanguageList">
         <item>English</item>
         <item>Español</item>
+        <item>Français</item>
     </string-array>
     <string-array name="lvwRoutesList">
         <item>Garza Sada</item>
@@ -70,11 +74,8 @@
         <item>Revolución</item>
         <item>Valle Alto</item>
     </string-array>
-    <!-- Temporaries
-           - Borrar cuando queden hechos  -MX -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="temporaryAlarms">Alarms Fragment View</string>
-    <string name="temporaryHome">Home Fragment View</string>
-    <string name="temporaryRoutes">Routes Fragment View</string>
-    <string name="temporaryStats">Stats Fragment View</string>
+    <!-- • Home (Driver) Fragment Scene -->
+    <string name="btnHomeDr1">COMPARTIR UBICACIÓN</string>
+    <string name="txvHomeDrHello">Hola, %1$s</string>
+    <string name="txvHomeDrRoute">Ruta: %1$s</string>
 </resources>

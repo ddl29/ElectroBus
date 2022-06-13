@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General Strings -->
+    <string name="app_logo_desc">ElectroBus</string>
+    <string name="app_name">ElectroBus</string>
+    <string name="username">Alberto</string>
+    <!-- Scene-Specific Strings -->
+    <!-- • Login Scene -->
+    <string name="btnLogin1">COMMENCER</string>
+    <string name="btnSignUp">S\'enregistrer</string>
+    <string name="etxLoginHint1">TOTP</string>
+    <string name="etxLoginHint1_desc">Entrez la clé TOTP ici.</string>
+    <string name="txvLogin1">Mot de Passe Oublié?</string>
+    <!-- • Sign Up Scene -->
+    <string name="btnConductor">Chauffeur</string>
+    <string name="btnPasajero">Passager</string>
+    <string name="btnSendSignUp">S\'ENREGISTRER</string>
+    <string name="etxEmailHint">Email</string>
+    <string name="etxMatriculaHint">ID Inscription</string>
+    <string name="etxNombreHint">Nom</string>
+    <string name="etxPasswordHint">Mot de Passe</string>
+    <string name="txvSignUp1">Je suis:</string>
+    <!-- • Home Fragment Scene -->
+    <!-- • Routes Fragment Scene -->
+    <string name="btnRoutes1">GARZA SADA</string>
+    <string name="btnRoutes2">HÔPITAUX ET CAMPUS</string>
+    <string name="btnRoutes3">REVOLUCIÓN</string>
+    <string name="btnRoutes4">VALLE ALTO</string>
+    <string name="txvRoutes1">Routes CircuitoTec</string>
+    <!-- • Stats Fragment Scene -->
+    <!-- • Alarms Fragment Scene -->
+    <string name="btnAlarms1">SAUVEGARDER</string>
+    <string name="btnAlarms2">EFFACER</string>
+    <string name="chbxFriday">Vendredi</string>
+    <string name="chbxMonday">Lundi</string>
+    <string name="chbxThursday">Jeudi</string>
+    <string name="chbxTuesday">Mardi</string>
+    <string name="chbxWednesday">Mercredi</string>
+    <string name="txvAlarms1">Régler les alarmes</string>
+    <string-array name="lvwAlarmTimechart">
+        <item>8:00</item>
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+    </string-array>
+    <!-- • Settings Fragment Scene -->
+    <string name="txvSettings1">Réglages Généraux</string>
+    <string name="txvSettings2">Alarmes</string>
+    <string name="txvSettings1_1">Mode Sombre</string>
+    <string name="txvSettings1_2">Langue</string>
+    <string name="txvSettings1_3">Route Principale</string>
+    <string name="txvSettings2_1">Régler l\'alarme:</string>
+    <string name="txvSettings2_2">Alarme avec son</string>
+    <string-array name="lvwAlarmTimesList">
+        <item>10 min avant</item>
+        <item>15 min avant</item>
+        <item>20 min avant</item>
+        <item>30 min avant</item>
+    </string-array>
+    <string-array name="lvwLanguageList">
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+    </string-array>
+    <string-array name="lvwRoutesList">
+        <item>Garza Sada</item>
+        <item>Hôpitaux et Campus</item>
+        <item>Revolución</item>
+        <item>Valle Alto</item>
+    </string-array>
+    <!-- • Home (Driver) Fragment Scene -->
+    <string name="btnHomeDr1">PARTAGER L\'EMPLACEMENT</string>
+    <string name="txvHomeDrHello">Bonjour, %1$s</string>
+    <string name="txvHomeDrRoute">Route: %1$s</string>
+</resources>

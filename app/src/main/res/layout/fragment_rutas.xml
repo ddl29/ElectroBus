@@ -6,60 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".RutasFragment">
 
-    <!--
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/temporaryRoutes" />
-     -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="40dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/Rutas_TextView"
+            android:id="@+id/txvRoutes1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rutas Circuito Tec"
+            android:layout_marginBottom="20dp"
+            android:text="@string/txvRoutes1"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="34sp" />
+            android:textSize="30sp" />
 
         <Button
-            android:id="@+id/Ruta_GrazaSada"
+            android:id="@+id/btnRoutes1"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_margin="10dp"
-            android:text="Ruta Garza Sada"
-            android:textSize="34sp" />
+            android:layout_margin="5dp"
+            android:text="@string/btnRoutes1"
+            android:textSize="30sp" />
 
         <Button
-            android:id="@+id/Ruta_Hospitales"
+            android:id="@+id/btnRoutes2"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_margin="10dp"
-            android:text="Ruta Hospitales y Escuelas"
-            android:textSize="34sp" />
+            android:layout_margin="5dp"
+            android:text="@string/btnRoutes2"
+            android:textSize="30sp" />
 
         <Button
-            android:id="@+id/Ruta_Revolucion"
+            android:id="@+id/btnRoutes3"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_margin="10dp"
-            android:text="Ruta Revolución"
-            android:textSize="34sp" />
+            android:layout_margin="5dp"
+            android:text="@string/btnRoutes3"
+            android:textSize="30sp" />
 
         <Button
-            android:id="@+id/Ruta_ValleAlto"
+            android:id="@+id/btnRoutes14"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_margin="10dp"
-            android:text="Ruta Valle Alto"
-            android:textSize="34sp" />
+            android:layout_margin="5dp"
+            android:text="@string/btnRoutes4"
+            android:textSize="30sp" />
     </LinearLayout>
-
-
-
 
 </FrameLayout>
