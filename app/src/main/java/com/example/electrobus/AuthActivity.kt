@@ -1,8 +1,13 @@
 package com.example.electrobus
 
 import android.content.Intent
+import android.content.res.Resources
+import android.content.res.Resources.getSystem
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import android.window.SplashScreen
 import androidx.appcompat.app.AlertDialog
@@ -12,6 +17,8 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import java.util.*
+import kotlin.collections.ArrayList
 
 enum class UserType{
     Conductor,
@@ -20,6 +27,7 @@ enum class UserType{
 
 class AuthActivity : AppCompatActivity() {
     lateinit var binding: ActivityAuthBinding
+    lateinit var locale : Locale
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Thread.sleep(500)
@@ -30,8 +38,43 @@ class AuthActivity : AppCompatActivity() {
         binding = ActivityAuthBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val defselect : String = "${getString(R.string.spnDefault)}"
+        var lang = ArrayList<String>()
+        lang.add(defselect)
+        lang.add(" Español")
+        lang.add(" English")
+        lang.add("Français")
+        var adapter = ArrayAdapter(this, androidx.constraintlayout.widget.R.layout.support_simple_spinner_dropdown_item, lang)
+        binding.spnLangSelect.adapter = adapter
+
+        binding.spnLangSelect.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, selItem: Int, id: Long) {
+                when(selItem) {
+                    0 -> { }
+                    1 -> setLocale("es")
+                    2 -> setLocale("en")
+                    3 -> setLocale("fr")
+                }
+            }
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+        }
+
         //setup
         setup()
+    }
+
+    fun setLocale (lang : String) {
+        locale = Locale(lang)
+        var res = resources
+        var config = res.configuration
+        config.locale = locale
+        var metrics = res.displayMetrics
+
+        res.updateConfiguration(config,metrics)
+        var refresh = Intent(this, AuthActivity::class.java)
+        startActivity(refresh)
     }
 
     private fun setup(){

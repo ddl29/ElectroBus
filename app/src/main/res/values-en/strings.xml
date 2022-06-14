@@ -3,7 +3,7 @@
     <!-- General Strings -->
     <string name="app_logo_desc">ElectroBus</string>
     <string name="app_name">ElectroBus</string>
-    <string name="username">Alberto</string>
+
     <!-- Scene-Specific Strings -->
     <!-- • Login Scene -->
     <string name="btnLogin1">START</string>
@@ -19,6 +19,7 @@
     <string name="etxMatriculaHint">Institution ID</string>
     <string name="etxNombreHint">Name</string>
     <string name="etxPasswordHint">Password</string>
+    <string name="spnDefault">Language</string>
     <string name="txvSignUp1">I\'m:</string>
     <!-- • Home Fragment Scene -->
     <!-- • Routes Fragment Scene -->
@@ -63,11 +64,6 @@
         <item>15 min before</item>
         <item>20 min before</item>
         <item>30 min before</item>
-    </string-array>
-    <string-array name="lvwLanguageList">
-        <item>English</item>
-        <item>Español</item>
-        <item>Français</item>
     </string-array>
     <string-array name="lvwRoutesList">
         <item>Garza Sada</item>

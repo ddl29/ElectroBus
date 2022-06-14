@@ -17,12 +17,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <Spinner
+                android:id="@+id/spnLangSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:contentDescription="@string/spnDefault"
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:textAlignment="gravity" />
+        </RelativeLayout>
+
         <ImageView
             android:id="@+id/img_ElectroBusLogo"
             android:layout_width="220dp"
             android:layout_height="90dp"
             android:layout_gravity="center"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="80dp"
             android:contentDescription="@string/app_logo_desc"
             app:srcCompat="@drawable/electrobus_logo_long" />
@@ -36,7 +51,8 @@
             android:inputType="textEmailAddress"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/etxPassword"
@@ -47,10 +63,9 @@
             android:hint="@string/etxPasswordHint"
             android:inputType="textPassword"
             android:textColorHint="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:importantForAutofill="no" />
 
-        <!-- Cambié este por un Relative, porque nomás era
-         un objeto  -MX -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,7 +87,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="130dp"
             android:orientation="horizontal">
 
             <TextView
@@ -81,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/txvLogin1"
-                android:textAlignment="textEnd"
+                android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -91,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/btnSignUp"
-                android:textAlignment="center"
+                android:textAlignment="textEnd"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
         </LinearLayout>

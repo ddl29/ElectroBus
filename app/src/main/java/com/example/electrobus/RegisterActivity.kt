@@ -4,11 +4,15 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.example.electrobus.databinding.ActivityAuthBinding
 import com.example.electrobus.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+import org.intellij.lang.annotations.Language
+import java.util.*
+import kotlin.collections.ArrayList
 
 class RegisterActivity : AppCompatActivity() {
     lateinit var binding: ActivityRegisterBinding
@@ -40,7 +44,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun registerUser() {
         val name = binding.etxNombre
-        val matricula = binding.etxMatricula
+        val id = binding.etxMatricula
         val email = binding.etxEmail
         val password = binding.etxPassword
         var typeUser = ""
@@ -54,8 +58,8 @@ class RegisterActivity : AppCompatActivity() {
                 name.setError("Ingresa tu nombre.")
                 noErrors = false
             }
-            if(matricula.text.isEmpty()){
-                matricula.setError("Ingresa tu matrícula o nómina.")
+            if(id.text.isEmpty()){
+                id.setError("Ingresa tu matrícula o nómina.")
                 noErrors = false
             }
             if(email.text.isEmpty()){
@@ -84,9 +88,9 @@ class RegisterActivity : AppCompatActivity() {
                 createUserWithEmailAndPassword(email.text.toString(), password.text.toString()).
                 addOnCompleteListener {
                     if(it.isSuccessful){
-                        var user = User(name.text.toString(), matricula.text.toString(),
+                        var user = User(name.text.toString(), id.text.toString(),
                             email.text.toString(), password.text.toString(),
-                            typeUser)
+                            typeUser,"Garza Sada")
                         FirebaseAuth.getInstance().currentUser?.let { it1 ->
                             FirebaseDatabase.getInstance().getReference("Users").child(it1.uid)
                         }?.setValue(user)?.addOnCompleteListener { it ->
