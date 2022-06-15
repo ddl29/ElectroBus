@@ -73,6 +73,6 @@
     </string-array>
     <!-- • Home (Driver) Fragment Scene -->
     <string name="btnHomeDr1">COMPARTIR UBICACIÓN</string>
-    <string name="txvHomeDrHello">Hola, %1$s</string>
-    <string name="txvHomeDrRoute">Ruta: %1$s</string>
+    <string name="txvHomeDrHello">Hola, Alberto</string>
+    <string name="txvHomeDrRoute">Ruta: Garza Sada</string>
 </resources>
